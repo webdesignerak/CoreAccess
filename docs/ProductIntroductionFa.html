@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="fa" />
+    <meta name="author" content="webdesigner_ak@yahoo.com - arashcms.ir - coreaccess.ir">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' 'unsafe-inline' 'unsafe-eval';
+        img-src data: http: https:;
+        font-src data: http: https:;
+        connect-src 'self' http: https: ws: wss:;">
+
+
+    <link href="~/lib/jqueryloading/jquery.loading.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CoreAccess، زیرساختی سبک و امن برای مدیریت کاربران و سطوح دسترسی در پروژه‌های ASP.NET Core. مناسب برای سازمان‌های کوچک تا متوسط.">
+    <meta name="keywords" content="CoreAccess, سیستم مدیریت دسترسی, کنترل کاربران, ASP.NET Core, زیرساخت نرم‌افزاری, سطوح دسترسی, امنیت نرم‌افزار, SQL Server, CMS فارسی, مدیریت کاربران">
+    <meta name="author" content="Arash Developer">
+
+    <!-- Open Graph (برای اشتراک در شبکه‌های اجتماعی) -->
+    <meta property="og:title" content="CoreAccess | مدیریت کاربران و سطوح دسترسی">
+    <meta property="og:description" content="زیرساختی سبک، حرفه‌ای و امن برای کنترل کاربران و سطوح دسترسی در پروژه‌های دات‌نت">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourdomain.com/images/coreaccess-cover.jpg">
+    <meta property="og:url" content="https://yourdomain.com/coreaccess">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CoreAccess | مدیریت کاربران در ASP.NET Core">
+    <meta name="twitter:description" content="زیرساختی ساده و امن برای مدیریت سطوح دسترسی و کاربران در پروژه‌های دات‌نت">
+    <meta name="twitter:image" content="https://coreaccess.ir/images/coreaccess-cover.jpg">
+
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "SoftwareApplication",
+          "name": "CoreAccess",
+          "operatingSystem": "Windows",
+          "applicationCategory": "BusinessApplication",
+          "description": "زیرساختی برای کنترل کاربران و سطوح دسترسی در پروژه‌های ASP.NET Core",
+          "url": "https://coreaccess.ir",
+          "creator": {
+            "@@type": "Person",
+            "name": "Arash Developer"
+          }
+        }
+    </script>
+
+    <link href="~/css/custom_theme/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/css/custom_theme/css2.css" rel="stylesheet" />
+    <link href="~/css/custom_theme/all.min.css" rel="stylesheet" />
+    <link href="~/css/custom_theme/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: rtl;
+            background: linear-gradient(145deg, #e0ecff, #f7faff);
+            color: #2b2b2b;
+        }
+
+        nav {
+            background-color: #004085;
+            padding: 1rem 2rem;
+            border-radius: 0 0 1rem 1rem;
+            margin-bottom: 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            nav a:hover {
+                color: #ffc107;
+            }
+
+        header {
+            background: linear-gradient(to right, #004085, #007bff);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 3rem;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+            header h1 {
+                font-size: 3.5rem;
+                font-weight: 900;
+                letter-spacing: -1px;
+            }
+
+        section {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            margin-top: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+            section:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+            }
+
+        h2 {
+            color: #003c7a;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            position: relative;
+            font-size: 1.75rem;
+        }
+
+            h2::after {
+                content: '';
+                width: 70px;
+                height: 4px;
+                background: #0d6efd;
+                position: absolute;
+                bottom: -12px;
+                right: 0;
+                border-radius: 4px;
+            }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            line-height: 2.3;
+        }
+
+            ul li::before {
+                content: "\f00c";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                color: #28a745;
+                margin-left: 0.6rem;
+                display: inline-block;
+            }
+
+        footer {
+            margin-top: 5rem;
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+
+        #moreInfoBtn {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 2rem;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: #004085;
+        }
+
+        input, textarea {
+            border-radius: 0.8rem !important;
+            border: 1px solid #ced4da;
+        }
+
+        form button {
+            border-radius: 2rem;
+            padding: 0.7rem 2rem;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @@media (min-width: 768px) {
+            section {
+                padding: 4rem 5rem;
+            }
+        }
+    </style>
+
+    <title>Core Access</title>
+
+
+
+
+</head>
+<body>
+<nav class="text-center">
+    <div class="nav-links">
+        <a href="#contact"><i class="fas fa-envelope"></i> تماس با ما</a>
+        <a href="/home/login"><i class="fas fa-sign-in-alt"></i> ورود به نسخه دمو</a>
+        <a href="#" id="switchLang"><i class="fas fa-language"></i> انگلیسی</a>
+    </div>
+</nav>
+<div class="container">
+    <header data-aos="fade-down">
+        <h1>CoreAccess</h1>
+        <p class="lead mt-3">زیرساختی سبک، حرفه‌ای و امن برای کنترل کاربران و سطوح دسترسی</p>
+    </header>
+
+    <section data-aos="fade-up">
+        <h2>🔷 معرفی کلی</h2>
+        <p>CoreAccess یک سیستم ماژولار و سبک برای مدیریت کاربران و سطوح دسترسی در پروژه‌های ASP.NET Core است. این محصول با سادگی در استفاده و قدرت در کنترل سطوح مختلف دسترسی طراحی شده است.</p>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2>⭐ ویژگی‌ها</h2>
+        <ul>
+            <li>مدیریت کاربران با رابط کاربری ساده و حرفه‌ای</li>
+            <li>پشتیبانی از سطوح دسترسی منعطف و قابل تعریف</li>
+            <li>قابل توسعه برای نیازهای خاص هر سازمان</li>
+            <li>طراحی سبک و سریع برای پروژه‌های دات ‌نت</li>
+            <li>نصب آسان و بدون نیاز به پیش ‌نیازهای پیچیده</li>
+        </ul>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2>📎 منابع</h2>
+        <ul>
+            <li><a href="/docs/CoreAccess_Technical_Documentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> مستندات فنی (PDF)</a></li>
+            <li><a href="/docs/CoreAccess_Diagram.png" target="_blank"><i class="fas fa-project-diagram"></i> نمودار معماری سیستم (PNG)</a></li>
+        </ul>
+        <img src="/docs/CoreAccess_Diagram.png" alt="نمودار معماری CoreAccess" class="img-fluid rounded shadow mt-4" style="max-width:100%; height:auto;">
+    </section>
+
+    <section data-aos="fade-up">
+        <h2>👍 مزایا</h2>
+        <ul>
+            <li>یکپارچگی کامل با پروژه‌های ASP.NET Core</li>
+            <li>کدنویسی ساده و قابل توسعه برای تیم‌های مختلف</li>
+            <li>امنیت بالا در احراز هویت و سطح دسترسی</li>
+            <li>پشتیبانی از چندزبانگی</li>
+            <li>بدون وابستگی به معماری‌های پیچیده، مناسب برای پروژه‌های سبک و سریع</li>
+            <li>راه‌اندازی کمتر از یک روز</li>
+            <li>سادگی در توسعه و نگهداری</li>
+            <li>امنیت سطح بالا و گزارش‌گیری کامل</li>
+            <li>قابل استفاده در پروژه‌های سازمانی یا MVP</li>
+        </ul>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2>🔁 تفاوت با دیگر سیستم‌ها</h2>
+        <ul>
+            <li>عدم نیاز به یادگیری معماری‌های پیچیده مانند CQRS یا Microservice</li>
+            <li>سادگی در طراحی و پیاده‌سازی همراه با انعطاف بالا</li>
+            <li>پشتیبانی مستقیم از SQL Server و تکنولوژی‌های مرسوم دات‌نت</li>
+            <li>قابلیت استفاده به عنوان زیرساخت مستقل یا ماژول قابل الحاق</li>
+            <li>کاهش زمان توسعه و نگهداری</li>
+        </ul>
+    </section>
+
+    <section data-aos="fade-up">
+        <h2>🏢 مشتریان فعلی</h2>
+        <ul>
+            <li>شرکت الکام (درمان، پیمانکار وزارت بهداشت و درمان صنعت نفت)</li>
+            <li>شرکت تنیاکو (سرمایه‌گذاری و شهرک‌سازی)</li>
+            <li>یکی از سیستمهای داخلی کانون زبان ایران</li>
+            <li>نسخه‌های سفارشی برای استارتاپ‌های BodyFa و GatePay</li>
+        </ul>
+    </section>
+
+    <section data-aos="fade-up" id="contact">
+        <h2>📬 ارتباط با ما</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label class="form-label">نام شما</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">ایمیل</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">پیام</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ارسال پیام</button>
+        </form>
+    </section>
+
+    <footer>
+        <button id="moreInfoBtn" class="btn btn-success">لیست قیمتها و امکانات محصول</button>
+        <p id="demoInfo" class="mt-3 text-success fw-bold" style="display:none;">برای اطلاع از لیست قیمتها و یا شرایط همکاری با ایمیل Webdesigner_ak@yahoo.com تماس بگیرید و یا شماره 09201302157.</p>
+    </footer>
+</div>
+<div style="position: fixed; left: 2rem; bottom: 2rem; z-index: 1000;">
+    <button onclick="scrollToTop()" class="btn btn-primary btn-lg rounded-circle shadow">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</div>
+
+
+
+
+    <script src="~/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="~/js/custom_theme/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        $("#moreInfoBtn").click(function () {
+            $("#demoInfo").slideDown();
+        });
+
+        $("#contactForm").submit(function (e) {
+            e.preventDefault();
+            alert("پیام شما با موفقیت ارسال شد!");
+            $(this).trigger("reset");
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        $("#switchLang").click(function (e) {
+            e.preventDefault();
+            document.cookie = "CurrentLanguage=en;";
+            location.reload();
+        });
+    </script>
+</body>
+</html>
