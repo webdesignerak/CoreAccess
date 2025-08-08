@@ -9,12 +9,12 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval';
         script-src 'self' 'unsafe-inline' 'unsafe-eval';
         style-src 'self' 'unsafe-inline' 'unsafe-eval';
-        img-src data: http: https:;
-        font-src data: http: https:;
+        img-src 'self' 'unsafe-inline' 'unsafe-eval';
+        font-src 'self' 'unsafe-inline' 'unsafe-eval';
         connect-src 'self' http: https: ws: wss:;">
 
 
-    <link href="~/lib/jqueryloading/jquery.loading.min.css" rel="stylesheet" />
+    <link href="lib/jqueryloading/jquery.loading.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
@@ -52,10 +52,10 @@
         }
     </script>
 
-    <link href="~/css/custom_theme/bootstrap.rtl.min.css" rel="stylesheet" />
-    <link href="~/css/custom_theme/css2.css" rel="stylesheet" />
-    <link href="~/css/custom_theme/all.min.css" rel="stylesheet" />
-    <link href="~/css/custom_theme/aos.css" rel="stylesheet" />
+    <link href="css/custom_theme/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="css/custom_theme/css2.css" rel="stylesheet" />
+    <link href="css/custom_theme/all.min.css" rel="stylesheet" />
+    <link href="css/custom_theme/aos.css" rel="stylesheet" />
 
     <style>
         body {
@@ -221,8 +221,8 @@
     <section data-aos="fade-up">
         <h2>📎 Resources</h2>
         <ul>
-            <li><a href="/docs/CoreAccess_Technical_Documentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Technical Documentation (PDF)</a></li>
-            <li><a href="/docs/CoreAccess_Diagram.png" target="_blank"><i class="fas fa-project-diagram"></i> Architecture Diagram (PNG)</a></li>
+            <li><a href="/docs/CoreAccess_Technical_Documentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Technical Documentation (PDF)</a> coming soon ... </li>
+            <li><a href="/docs/CoreAccess_Diagram.png" target="_blank"><i class="fas fa-project-diagram"></i> Architecture Diagram (PNG)</a> coming soon ... </li>
         </ul>
         <img src="/docs/CoreAccess_Diagram.png" alt="CoreAccess Diagram" class="img-fluid rounded shadow mt-4" style="max-width:100%; height:auto;">
     </section>
@@ -284,7 +284,7 @@
 
     <footer>
         <button id="moreInfoBtn" class="btn btn-success">Pricing & Features</button>
-        <p id="demoInfo" class="mt-3 text-success fw-bold" style="display:none;">For pricing and partnership options, contact: Webdesigner_ak@yahoo.com</p>
+        <p id="demoInfo" class="mt-3 text-success fw-bold" style="display:none;">For pricing and partnership options, contact: webdesigner_ak@yahoo.com</p>
     </footer>
 </div>
 
@@ -297,9 +297,9 @@
 
 
 
-    <script src="~/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
-    <script src="~/lib/jquery-cookie/jquery.cookie.js"></script>
-    <script src="~/js/custom_theme/aos.js"></script>
+    <script src="lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-cookie/jquery.cookie.js"></script>
+    <script src="js/custom_theme/aos.js"></script>
 
     <script>
         AOS.init();
@@ -320,8 +320,9 @@
 
         $("#switchLang").click(function (e) {
             e.preventDefault();
-            document.cookie = "CurrentLanguage=fa;";
-            location.reload();
+            location = 'ProductIntroductionFa.html';
+            //document.cookie = "CurrentLanguage=fa;";
+            //location.reload();
         });
     </script>
 </body>

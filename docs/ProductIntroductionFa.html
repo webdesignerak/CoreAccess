@@ -9,12 +9,12 @@
     <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval';
         script-src 'self' 'unsafe-inline' 'unsafe-eval';
         style-src 'self' 'unsafe-inline' 'unsafe-eval';
-        img-src data: http: https:;
-        font-src data: http: https:;
+        img-src 'self' 'unsafe-inline' 'unsafe-eval';
+        font-src 'self' 'unsafe-inline' 'unsafe-eval';
         connect-src 'self' http: https: ws: wss:;">
 
 
-    <link href="~/lib/jqueryloading/jquery.loading.min.css" rel="stylesheet" />
+    <link href="lib/jqueryloading/jquery.loading.min.css" rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO Meta Tags -->
@@ -51,10 +51,10 @@
         }
     </script>
 
-    <link href="~/css/custom_theme/bootstrap.rtl.min.css" rel="stylesheet" />
-    <link href="~/css/custom_theme/css2.css" rel="stylesheet" />
-    <link href="~/css/custom_theme/all.min.css" rel="stylesheet" />
-    <link href="~/css/custom_theme/aos.css" rel="stylesheet" />
+    <link href="css/custom_theme/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="css/custom_theme/css2.css" rel="stylesheet" />
+    <link href="css/custom_theme/all.min.css" rel="stylesheet" />
+    <link href="css/custom_theme/aos.css" rel="stylesheet" />
 
     <style>
         body {
@@ -235,10 +235,10 @@
     <section data-aos="fade-up">
         <h2>📎 منابع</h2>
         <ul>
-            <li><a href="/docs/CoreAccess_Technical_Documentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> مستندات فنی (PDF)</a></li>
-            <li><a href="/docs/CoreAccess_Diagram.png" target="_blank"><i class="fas fa-project-diagram"></i> نمودار معماری سیستم (PNG)</a></li>
+            <li><a href="/CoreAccess_Technical_Documentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> مستندات فنی (PDF)</a> ... بزودی</li>
+            <li><a href="/CoreAccess_Diagram.png" target="_blank"><i class="fas fa-project-diagram"></i> نمودار معماری سیستم (PNG)</a> ... بزودی</li>
         </ul>
-        <img src="/docs/CoreAccess_Diagram.png" alt="نمودار معماری CoreAccess" class="img-fluid rounded shadow mt-4" style="max-width:100%; height:auto;">
+        <img src="/CoreAccess_Diagram.png" alt="نمودار معماری CoreAccess" class="img-fluid rounded shadow mt-4" style="max-width:100%; height:auto;">
     </section>
 
     <section data-aos="fade-up">
@@ -298,7 +298,23 @@
 
     <footer>
         <button id="moreInfoBtn" class="btn btn-success">لیست قیمتها و امکانات محصول</button>
-        <p id="demoInfo" class="mt-3 text-success fw-bold" style="display:none;">برای اطلاع از لیست قیمتها و یا شرایط همکاری با ایمیل Webdesigner_ak@yahoo.com تماس بگیرید و یا شماره 09201302157.</p>
+        <p id="demoInfo" class="mt-3 text-success fw-bold" style="display:none;">
+            <span>
+                برای اطلاع از لیست قیمتها و یا همکاری با ایمیل
+            </span>
+            <span>
+                webdesigner_ak@yahoo.com
+            </span>
+            <span>
+                و یا شماره
+            </span>
+            <span>
+                09201302157
+            </span>
+            <span>
+                تماس بگیرید.
+            </span>
+        </p>
     </footer>
 </div>
 <div style="position: fixed; left: 2rem; bottom: 2rem; z-index: 1000;">
@@ -310,9 +326,9 @@
 
 
 
-    <script src="~/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
-    <script src="~/lib/jquery-cookie/jquery.cookie.js"></script>
-    <script src="~/js/custom_theme/aos.js"></script>
+    <script src="lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="lib/jquery-cookie/jquery.cookie.js"></script>
+    <script src="js/custom_theme/aos.js"></script>
 
     <script>
         AOS.init();
@@ -333,8 +349,9 @@
 
         $("#switchLang").click(function (e) {
             e.preventDefault();
-            document.cookie = "CurrentLanguage=en;";
-            location.reload();
+            location = 'ProductIntroductionEn.html';
+            //document.cookie = "CurrentLanguage=en;";
+            //location.reload();
         });
     </script>
 </body>
