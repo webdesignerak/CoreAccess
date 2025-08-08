@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Language" content="fa" />
+    <meta name="author" content="webdesigner_ak@yahoo.com - arashcms.ir - coreaccess.ir">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline' 'unsafe-eval';
+        script-src 'self' 'unsafe-inline' 'unsafe-eval';
+        style-src 'self' 'unsafe-inline' 'unsafe-eval';
+        img-src data: http: https:;
+        font-src data: http: https:;
+        connect-src 'self' http: https: ws: wss:;">
+
+
+    <link href="~/lib/jqueryloading/jquery.loading.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="CoreAccess is a lightweight and secure infrastructure for user and access control in ASP.NET Core projects. Ideal for small to medium organizations.">
+    <meta name="keywords" content="CoreAccess, Access Control System, User Management, ASP.NET Core, Software Infrastructure, Role Management, Application Security, SQL Server, Persian CMS">
+    <meta name="author" content="Arash Developer">
+
+    <!-- Open Graph (for Social Media Sharing) -->
+    <meta property="og:title" content="CoreAccess | User and Access Management System">
+    <meta property="og:description" content="A lightweight, professional, and secure infrastructure for managing users and roles in .NET projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://coreaccess.ir/images/coreaccess-cover.jpg">
+    <meta property="og:url" content="https://coreaccess.ir/coreaccess">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="CoreAccess | User Management in ASP.NET Core">
+    <meta name="twitter:description" content="A simple and secure infrastructure for managing access levels and users in .NET-based projects.">
+    <meta name="twitter:image" content="https://coreaccess.ir/images/coreaccess-cover.jpg">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+        {
+          "@@context": "https://schema.org",
+          "@@type": "SoftwareApplication",
+          "name": "CoreAccess",
+          "operatingSystem": "Windows",
+          "applicationCategory": "BusinessApplication",
+          "description": "An infrastructure for managing users and access levels in ASP.NET Core projects.",
+          "url": "https://coreaccess.ir",
+          "creator": {
+            "@type": "Person",
+            "name": "Arash Developer"
+          }
+        }
+    </script>
+
+    <link href="~/css/custom_theme/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/css/custom_theme/css2.css" rel="stylesheet" />
+    <link href="~/css/custom_theme/all.min.css" rel="stylesheet" />
+    <link href="~/css/custom_theme/aos.css" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            direction: ltr;
+            background: linear-gradient(145deg, #e0ecff, #f7faff);
+            color: #2b2b2b;
+        }
+
+        nav {
+            background-color: #004085;
+            padding: 1rem 2rem;
+            border-radius: 0 0 1rem 1rem;
+            margin-bottom: 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+            nav a:hover {
+                color: #ffc107;
+            }
+
+        header {
+            background: linear-gradient(to right, #004085, #007bff);
+            color: white;
+            padding: 4rem 2rem;
+            border-radius: 2rem;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            margin-bottom: 3rem;
+        }
+
+            header h1 {
+                font-size: 3.5rem;
+                font-weight: 900;
+                letter-spacing: -1px;
+            }
+
+        section {
+            background: white;
+            border-radius: 1.5rem;
+            padding: 3rem;
+            margin-top: 2rem;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+            transition: all 0.4s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+            section:hover {
+                transform: translateY(-6px);
+                box-shadow: 0 14px 40px rgba(0,0,0,0.12);
+            }
+
+        h2 {
+            color: #003c7a;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            position: relative;
+            font-size: 1.75rem;
+        }
+
+            h2::after {
+                content: '';
+                width: 70px;
+                height: 4px;
+                background: #0d6efd;
+                position: absolute;
+                bottom: -12px;
+                left: 0;
+                border-radius: 4px;
+            }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            line-height: 2.3;
+        }
+
+            ul li::before {
+                content: "\f00c";
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                color: #28a745;
+                margin-right: 0.6rem;
+                display: inline-block;
+            }
+
+        footer {
+            margin-top: 5rem;
+            text-align: center;
+            padding-bottom: 5rem;
+        }
+
+        #moreInfoBtn {
+            padding: 1rem 2.5rem;
+            font-size: 1.2rem;
+            border-radius: 2rem;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        @@media (min-width: 768px) {
+            section {
+                padding: 4rem 5rem;
+            }
+        }
+    </style>
+
+    <title>Core Access</title>
+
+
+
+
+</head>
+<body>
+<nav class="text-center">
+    <div class="nav-links">
+        <a href="#contact"><i class="fas fa-envelope"></i> Contact Us</a>
+        <a href="/home/login"><i class="fas fa-sign-in-alt"></i> Demo Access</a>
+        <a href="#" id="switchLang"><i class="fas fa-language"></i> Persian</a>
+    </div>
+</nav>
+<div class="container">
+    <header>
+        <h1>CoreAccess</h1>
+        <p class="lead mt-3">A secure, lightweight, and professional infrastructure for managing users and access levels in ASP.NET Core projects.</p>
+    </header>
+
+    <section>
+        <h2>🔷 Overview</h2>
+        <p>CoreAccess is a modular, lightweight system for user and role management in ASP.NET Core applications. It is designed with simplicity and robust access control in mind.</p>
+    </section>
+
+    <section>
+        <h2>⭐ Key Features</h2>
+        <ul>
+            <li>Modern, user-friendly UI for user management</li>
+            <li>Flexible and customizable access level definitions</li>
+            <li>Easily extendable for organizational needs</li>
+            <li>Fast and lightweight design for .NET projects</li>
+            <li>Easy setup with no complex dependencies</li>
+        </ul>
+    </section>
+
+    <!-- New Resources Section -->
+    <section data-aos="fade-up">
+        <h2>📎 Resources</h2>
+        <ul>
+            <li><a href="/docs/CoreAccess_Technical_Documentation.pdf" target="_blank"><i class="fas fa-file-pdf"></i> Technical Documentation (PDF)</a></li>
+            <li><a href="/docs/CoreAccess_Diagram.png" target="_blank"><i class="fas fa-project-diagram"></i> Architecture Diagram (PNG)</a></li>
+        </ul>
+        <img src="/docs/CoreAccess_Diagram.png" alt="CoreAccess Diagram" class="img-fluid rounded shadow mt-4" style="max-width:100%; height:auto;">
+    </section>
+
+    <section>
+        <h2>👍 Advantages</h2>
+        <ul>
+            <li>Seamless integration with ASP.NET Core</li>
+            <li>Simple codebase and scalable structure</li>
+            <li>Strong authentication and authorization security</li>
+            <li>Support for multilingual UIs</li>
+            <li>No need for complex architectures like CQRS or microservices</li>
+            <li>Launch-ready in less than a day</li>
+            <li>Low maintenance and fast development</li>
+            <li>Advanced reporting and access control features</li>
+            <li>Ideal for both MVPs and enterprise systems</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🔁 How It Differs</h2>
+        <ul>
+            <li>No learning curve for advanced patterns like CQRS or Microservices</li>
+            <li>Simplified yet flexible architecture</li>
+            <li>Native support for SQL Server and standard .NET technologies</li>
+            <li>Can be used as a core framework or plug-in module</li>
+            <li>Reduces development and support time significantly</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>🏢 Current Clients</h2>
+        <ul>
+            <li>Elcom Co. (Healthcare contractor for the Ministry of Health and the Oil Industry’s Medical Division)</li>
+            <li>Teniako Co. (Real estate investment and construction)</li>
+            <li>Customized builds for startups like BodyFa and GatePay</li>
+            <li>Deployed in one of the internal systems of the Iran Language Institute</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>📬 Contact Us</h2>
+        <form id="contactForm">
+            <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <button id="moreInfoBtn" class="btn btn-success">Pricing & Features</button>
+        <p id="demoInfo" class="mt-3 text-success fw-bold" style="display:none;">For pricing and partnership options, contact: Webdesigner_ak@yahoo.com</p>
+    </footer>
+</div>
+
+<div style="position: fixed; right: 2rem; bottom: 2rem; z-index: 1000;">
+    <button onclick="scrollToTop()" class="btn btn-primary btn-lg rounded-circle shadow">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+</div>
+
+
+
+
+    <script src="~/lib/jquery-3.7.1/jquery-3.7.1.min.js"></script>
+    <script src="~/lib/jquery-cookie/jquery.cookie.js"></script>
+    <script src="~/js/custom_theme/aos.js"></script>
+
+    <script>
+        AOS.init();
+
+        $("#moreInfoBtn").click(function () {
+            $("#demoInfo").slideDown();
+        });
+
+        $("#contactForm").submit(function (e) {
+            e.preventDefault();
+            alert("Your message has been sent successfully!");
+            $(this).trigger("reset");
+        });
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        $("#switchLang").click(function (e) {
+            e.preventDefault();
+            document.cookie = "CurrentLanguage=fa;";
+            location.reload();
+        });
+    </script>
+</body>
+</html>
