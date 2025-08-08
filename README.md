@@ -5,7 +5,7 @@ It is designed for organizations of all sizes, from startups to mid-size enterpr
 
 ---
 
-## ðŸš€ Features
+## ✨ Features
 - User management with a clean and professional UI
 - Flexible and definable access levels
 - Easily extensible for custom business requirements
@@ -14,7 +14,7 @@ It is designed for organizations of all sizes, from startups to mid-size enterpr
 
 ---
 
-## ðŸ’¡ Benefits
+## 💎 Benefits
 - Seamless integration with ASP.NET Core projects
 - Developer-friendly architecture â€” easy to maintain and extend
 - High-level authentication and authorization security
@@ -24,7 +24,7 @@ It is designed for organizations of all sizes, from startups to mid-size enterpr
 
 ---
 
-## ðŸ” How Itâ€™s Different
+## 🔄 How It Differs
 - No need for complex architectures like CQRS or microservices
 - Simple but powerful â€” reduces development complexity
 - Direct support for SQL Server and common .NET technologies
@@ -33,14 +33,14 @@ It is designed for organizations of all sizes, from startups to mid-size enterpr
 
 ---
 
-## ðŸ¢ Current Clients
-- **Elcom Co.** â€“ Healthcare contractor for the Ministry of Health and the Oil Industryâ€™s Medical Division
-- **Taniaco Co.** â€“ Investment and real estate development
+## 🏢 Current Clients
+- **Elcom Co.** Healthcare contractor for the Ministry of Health and the Oil Industry's Medical Division
+- **Taniaco Co.**  Investment and real estate development
 - Custom deployments for **BodyFa** and **GatePay** startups
 
 ---
 
-## ðŸ›  Technology Stack
+## 🚀  Technology Stack
 - **Backend:** ASP.NET Core MVC 8, C#
 - **Database:** SQL Server
 - **Frontend:** JavaScript, jQuery, Bootstrap, AOS Animation
@@ -49,7 +49,7 @@ It is designed for organizations of all sizes, from startups to mid-size enterpr
 
 ---
 
-## ðŸ“¦ Installation
+##  Installation
 ```bash
 git clone https://github.com/YourUsername/CoreAccess.git
 cd CoreAccess
@@ -59,30 +59,30 @@ cd CoreAccess
 
 ---
 
-## ðŸ“„ Documentation
+## 📂 Documentation
 Full technical documentation and architecture diagram are available in the `/docs` folder.
 
-- [ðŸ“„ Technical Documentation (PDF)](docs/CoreAccess_Technical_Documentation.pdf)
-- [ðŸ–¼ Architecture Diagram (PNG)](docs/CoreAccess_Diagram.png)
+- [📄 Technical Documentation (PDF)](docs/CoreAccess_Technical_Documentation.pdf)
+- [🗺 Architecture Diagram (PNG)](docs/CoreAccess_Diagram.png)
 
 ---
 
-## ðŸŒ Demo
+## ➡️ Demo
 A live demo is available.  
 [ðŸ”— Access the Demo](https://yourdomain.com/demo-login)
 
 ---
 
-## ðŸ¤ Contributing
+## 🤝 Contributing
 Contributions are welcome! Please open an issue or submit a pull request.
 
 ---
 
-## ðŸ“§ Contact
+## 📬 Contact
 For pricing, partnerships, or inquiries:  
 ðŸ“© **Webdesigner_ak@yahoo.com**
 
 ---
 
-## ðŸ“œ License
+## 📄 License
 This project is licensed under the MIT License.
