@@ -62,8 +62,9 @@ cd CoreAccess
 ## 📂 Documentation
 Full technical documentation and architecture diagram are available in the `/docs` folder.
 
-- [📄 Technical Documentation (PDF)](docs/CoreAccess_Technical_Documentation.pdf)
-- [🗺 Architecture Diagram (PNG)](docs/CoreAccess_Diagram.png)
+- [📄 Technical Documentation (PDF)](docs/projects docs en.pdf)
+- [🗺 Architecture Diagram (PNG)](docs/diagram en.png)
+- [🗺 Diagram of sending a request and receiving a response (PNG)](docs/requestresponsediagram en.png)
 
 ---
 
