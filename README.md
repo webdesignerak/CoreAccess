@@ -70,7 +70,7 @@ Full technical documentation and architecture diagram are available in the `/doc
 
 ## ➡️ Demo
 A live demo is available.  
-[Access the Demo](https://194.5.195.21:1000)
+[Access the Demo](http://194.5.195.21:1000)
 
 ---
 
