@@ -49,13 +49,13 @@ It is designed for organizations of all sizes, from startups to mid-size enterpr
 
 ---
 
-##  Installation
-```bash
-git clone https://github.com/YourUsername/CoreAccess.git
-cd CoreAccess
-# Open CoreAccess.sln in Visual Studio
-# Restore NuGet packages and run the project
-```
+---##  Installation
+---```bash
+---git clone https://github.com/YourUsername/CoreAccess.git
+---cd CoreAccess
+---# Open CoreAccess.sln in Visual Studio
+---# Restore NuGet packages and run the project
+---```
 
 ---
 
@@ -70,7 +70,7 @@ Full technical documentation and architecture diagram are available in the `/doc
 
 ## ➡️ Demo
 A live demo is available.  
-[ðŸ”— Access the Demo](https://yourdomain.com/demo-login)
+[Access the Demo](https://194.5.195.21:1000)
 
 ---
 
