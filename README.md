@@ -81,7 +81,7 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## 📬 Contact
 For pricing, partnerships, or inquiries:  
-ðŸ“© **Webdesigner_ak@yahoo.com**
+© **Webdesigner_ak@yahoo.com**
 
 ---
 
