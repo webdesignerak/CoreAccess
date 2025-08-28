@@ -1,79 +1,76 @@
 # CoreAccess
 
-CoreAccess is a lightweight, secure, and modular infrastructure for managing users and access levels in **ASP.NET Core** projects.  
-It is designed for organizations of all sizes, from startups to mid-size enterprises, focusing on **simplicity, flexibility, and security**.
+**زیرساختی سبک، امن و حرفه‌ای برای مدیریت کاربران و سطوح دسترسی در پروژه‌های ASP.NET Core**
 
 ---
 
-## ✨ Features
-- User management with a clean and professional UI
-- Flexible and definable access levels
-- Easily extensible for custom business requirements
-- Lightweight design optimized for .NET projects
-- Quick installation with minimal dependencies
+## 📌 معرفی کلی
+CoreAccess یک سیستم ماژولار و سبک برای مدیریت کاربران و سطوح دسترسی است که با سادگی در استفاده و قدرت در کنترل طراحی شده است.  
+این سیستم بدون نیاز به معماری‌های پیچیده، امکان یکپارچه‌سازی سریع با پروژه‌های دات‌نت را فراهم می‌کند.
 
 ---
 
-## 💎 Benefits
-- Seamless integration with ASP.NET Core projects
-- Developer-friendly architecture â€” easy to maintain and extend
-- High-level authentication and authorization security
-- Multi-language support (in upcoming versions)
-- Suitable for MVPs and enterprise solutions
-- Deployment in less than a day
+## ✨ ویژگی‌ها
+- مدیریت کاربران با رابط کاربری ساده و حرفه‌ای
+- پشتیبانی از سطوح دسترسی منعطف و قابل تعریف
+- قابل توسعه برای نیازهای خاص هر سازمان
+- طراحی سبک و سریع برای پروژه‌های دات ‌نت
+- نصب آسان و بدون نیاز به پیش ‌نیازهای پیچیده
 
 ---
 
-## 🔄 How It Differs
-- No need for complex architectures like CQRS or microservices
-- Simple but powerful â€” reduces development complexity
-- Direct support for SQL Server and common .NET technologies
-- Can be used as a standalone solution or pluggable module
-- Cuts down development and maintenance time
+## 💎 مزایا
+- یکپارچگی کامل با پروژه‌های ASP.NET Core
+- کدنویسی ساده و قابل توسعه برای تیم‌های مختلف
+- امنیت بالا در احراز هویت و سطح دسترسی
+- پشتیبانی از چندزبانگی
+- بدون وابستگی به معماری‌های پیچیده، مناسب برای پروژه‌های سبک و سریع
+- راه‌اندازی کمتر از یک روز
+- سادگی در توسعه و نگهداری
+- امنیت سطح بالا و گزارش‌گیری کامل
+- قابل استفاده در پروژه‌های سازمانی یا MVP
 
 ---
 
-## 🏢 Current Clients
-- **Elcom Co.** Healthcare contractor for the Ministry of Health and the Oil Industry's Medical Division
-- **Taniaco Co.**  Investment and real estate development
-- Custom deployments for **BodyFa** and **GatePay** startups
+## 🔄 تفاوت با دیگر سیستم‌ها
+- عدم نیاز به یادگیری CQRS یا Microservice
+- سادگی در طراحی و پیاده‌سازی همراه با انعطاف بالا
+- پشتیبانی مستقیم از SQL Server
+- قابلیت استفاده به عنوان ماژول یا سیستم مستقل
+- کاهش زمان توسعه و نگهداری
 
 ---
 
-## 🚀  Technology Stack
-- **Backend:** ASP.NET Core MVC 8, C#
-- **Database:** SQL Server
-- **Frontend:** JavaScript, jQuery, Bootstrap, AOS Animation
-- **Security:** Role-based access control (RBAC), user authentication
-- **Architecture:** Modular design
+## 🏢 مشتریان فعلی
+- شرکت الکام (درمان، پیمانکار وزارت بهداشت و درمان صنعت نفت)</li>
+- شرکت تنیاکو (سرمایه‌گذاری و شهرک ‌سازی), <a style="text-decoration: none;" href="my.teniaco.com">my.teniaco.com</a>, <a href="melkavan.com" style="text-decoration: none;">melkavan.com</a>
+- یکی از سیستمهای داخلی کانون زبان ایران
+- نسخه‌های سفارشی برای استارتاپ‌های BodyFa و GatePay
 
 ---
 
-## 📂 Documentation
-Full technical documentation and architecture diagram are available in the `/docs` folder.
-
-- [📄 Technical Documentation (PDF)](docs/projects docs en.pdf)
-- [🗺 Architecture Diagram (PNG)](docs/diagram en.png)
-- [🗺 Diagram of sending a request and receiving a response (PNG)](docs/requestresponsediagram en.png)
-
+## 📂 منابع
+- [📄 مستندات فنی (PDF)](/docs/projects docs fa.pdf)
+- [🗺 دیاگرام معماری (PNG)](/docs/diagram fa.png)
+- [🗺 دیاگرام ارسال درخواست و دریافت پاسخ (PNG)](/docs/requestresponsediagram fa.png)
+ 
 ---
 
-## ➡️ Demo
-A live demo is available.  
+## 🚀 ورد به دمو
 [Access the Demo](http://194.5.195.21:1000)
 
 ---
 
-## 🤝 Contributing
-Contributions are welcome! Please open an issue or submit a pull request.
+## 🤝 مشارکت
+پول ریکوئست‌ها پذیرفته می‌شوند. برای تغییرات بزرگ، لطفاً ابتدا یک Issue باز کنید تا تغییرات پیشنهادی را بحث کنیم.
 
 ---
 
-## 📬 Contact
-For pricing, partnerships, or inquiries:  
+## 📬 تماس
+برای اطلاع ازقیمتها با ایمیل زیر در تماس باشید
 © **Webdesigner_ak@yahoo.com**
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License.
+## 📄 مجوز
+این پروژه تحت لایسنس MIT منتشر شده است.
